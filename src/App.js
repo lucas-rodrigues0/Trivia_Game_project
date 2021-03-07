@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
+// import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
+import Game from './components/Game';
+import Login from './components/Login';
+import Ranking from './components/Ranking';
+import Feedback from './components/Feedback';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends React.Component {
+  componentDidMount() {
+    localStorage.setItem('ranking', JSON.stringify([]));
+  }
 
-export default App;
+  render() {
+    return (
+      <main>
+        <Switch>
+          <Route path="/ranking" component={ Ranking } />
+          <Route path="/game" component={ Game } />
+          <Route path="/feedback" component={ Feedback } />
+          <Route path="/" component={ Login } />
+        </Switch>
+      </main>
+    );
+  }
+}
+App.propTypes = {};
+// const mapStateToProps = (state) => ({});
+// const mapDispatchToProps = (dispatch) => ({});
+
+export default connect(null, null)(App);
