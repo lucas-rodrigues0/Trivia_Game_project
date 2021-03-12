@@ -2,6 +2,13 @@
 
 <projeto do curso de Desenvolvimento Web Trybe para o módulo Front-end usando 'React, React-router e Redux'>
 
+- Projeto realizado em grupo pela metodologia ágil Kanban -
+participantes:
+- Lucas Rodrigues - https://github.com/lucas-rodrigues0
+- Filipe Louzano - https://github.com/MEianelli
+- Douglas Fernando - https://github.com/Doug-Fernando
+- Lucas Duque - https://github.com/LucasDuqueO
+
 Especificação do Projeto:
 
 Desenvolver um jogo de perguntas e respostas baseado no jogo Trivia, utilizando React e Redux.
