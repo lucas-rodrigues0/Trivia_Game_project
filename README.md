@@ -3,6 +3,7 @@
 <projeto do curso de Desenvolvimento Web Trybe para o módulo Front-end usando 'React, React-router e Redux'>
 
 <Projeto realizado em grupo pela metodologia ágil Kanban>
+
 participantes:
 - Lucas Rodrigues - https://github.com/lucas-rodrigues0
 - Filipe Louzano - https://github.com/MEianelli
